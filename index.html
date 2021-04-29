@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>Social Media Dark Mode</title>
+  </head>
+  <body>
+    <div class="firstContainer">
+      <div class="content">
+        <div class="title">
+          <h3>Social Media Dashboard</h3>
+          <span>Total Followers: 23,004</span>
+        </div>
+        <div class="darkMode">
+          <span>Dark Mode</span>
+          <label class="switch">
+            <input type="checkbox" id="checkboxInput" onclick="dark()">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="miniCard facebook" id="facebook">
+            <div class="header">
+              <img src="images/icon-facebook.svg" alt="facebook">
+              <span>@nathanf</span>
+            </div>
+            <h1>1987</h1>
+            <span class="followers">FOLLOWERS</span>
+            <div class="miniRow">
+              <img class="arrow" src="images/icon-up.svg" alt="up">
+              <span class="today">12 Today</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="miniCard twitter">
+            <div class="header">
+              <img src="images/icon-twitter.svg" alt="twitter">
+              <span>@nathanf</span>
+            </div>
+            <h1>1044</h1>
+            <span class="followers">FOLLOWERS</span>
+            <div class="miniRow">
+              <img class="arrow" src="images/icon-up.svg" alt="up">
+              <span class="today">99 Today</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="instaCard">
+            <div class="miniCard instagram">
+              <div class="header">
+                <img src="images/icon-instagram.svg" alt="instagram">
+                <span>@realnathanf</span>
+              </div>
+              <h1>11k</h1>
+              <span class="followers">FOLLOWERS</span>
+              <div class="miniRow">
+                <img class="arrow" src="images/icon-up.svg" alt="up">
+                <span class="today">1099 Today</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="miniCard youtube">
+            <div class="header">
+              <img src="images/icon-youtube.svg" alt="youtube">
+              <span>Nathan F.</span>
+            </div>
+            <h1>8239</h1>
+            <span class="followers">SUBSCRIBERS</span>
+            <div class="miniRow">
+              <img class="arrow" src="images/icon-down.svg" alt="up">
+              <span class="today red">144 Today</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overview">
+      <h4>Overview Today</h4>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="miniCard below">
+            <div class="firstPart">
+              <span>Page Views</span>
+              <img src="images/icon-facebook.svg" alt="Facebook">
+            </div>
+            <div class="secondPart">
+              <h3>87</h3>
+              <div class="miniPart">
+                <img class="arrow" src="images/icon-up.svg" alt="up">
+                <span class="today">3%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="miniCard below">
+            <div class="firstPart">
+              <span>Likes</span>
+              <img src="images/icon-facebook.svg" alt="Facebook">
+            </div>
+            <div class="secondPart">
+              <h3>52</h3>
+              <div class="miniPart">
+                <img class="arrow" src="images/icon-down.svg" alt="down">
+                <span class="today red">2%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="miniCard below">
+            <div class="firstPart">
+              <span>Likes</span>
+              <img src="images/icon-instagram.svg" alt="Instagram">
+            </div>
+            <div class="secondPart">
+              <h3>5462</h3>
+              <div class="miniPart">
+                <img class="arrow" src="images/icon-up.svg" alt="up">
+                <span class="today">2257%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="miniCard below">
+            <div class="firstPart">
+              <span>Profile Views</span>
+              <img src="images/icon-instagram.svg" alt="Instagram">
+            </div>
+            <div class="secondPart">
+              <h3>52k</h3>
+              <div class="miniPart">
+                <img class="arrow" src="images/icon-up.svg" alt="up">
+                <span class="today">1375%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row two">
+        <div class="col-lg-3">
+          <div class="miniCard below">
+            <div class="firstPart">
+              <span>Retweets</span>
+              <img src="images/icon-twitter.svg" alt="Twitter">
+            </div>
+            <div class="secondPart">
+              <h3>117</h3>
+              <div class="miniPart">
+                <img class="arrow" src="images/icon-up.svg" alt="up">
+                <span class="today">303%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="miniCard below">
+            <div class="firstPart">
+              <span>Likes</span>
+              <img src="images/icon-twitter.svg" alt="Twitter">
+            </div>
+            <div class="secondPart">
+              <h3>507</h3>
+              <div class="miniPart">
+                <img class="arrow" src="images/icon-up.svg" alt="up">
+                <span class="today">553%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="miniCard below">
+            <div class="firstPart">
+              <span>Likes</span>
+              <img src="images/icon-youtube.svg" alt="Youtube">
+            </div>
+            <div class="secondPart">
+              <h3>107</h3>
+              <div class="miniPart">
+                <img class="arrow" src="images/icon-down.svg" alt="down">
+                <span class="today red">19%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="miniCard below">
+            <div class="firstPart">
+              <span>Total Views</span>
+              <img src="images/icon-youtube.svg" alt="Youtube">
+            </div>
+            <div class="secondPart">
+              <h3>1407</h3>
+              <div class="miniPart">
+                <img class="arrow" src="images/icon-down.svg" alt="down">
+                <span class="today red">12%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
